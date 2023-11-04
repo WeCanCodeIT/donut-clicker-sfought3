@@ -1,0 +1,45 @@
+body {
+    font-family: 'Oswald', sans-serif;
+}
+.container{
+    max-width:600px;
+    margin: 0 auto;
+    padding:20px;
+    background: antiquewhite;
+    border-radius:10px;
+    box-shadow: 0px 4px 8px black;
+
+}
+h1{
+    text-align: center;
+}
+.inputContainer{
+    display:flex;
+    margin-bottom: 10px;
+}
+input{
+    flex-grow: 1;
+    padding: 4px;
+
+}
+button#addItem{
+    background-color: rgb(26,130,174);
+}
+button{
+    background-color: red;
+}
+button:hover, button#addItem:hover{
+    background-color: aquamarine;
+}
+ul{
+    margin-right: 10px;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid burlywood;
+    padding:8px;
+    margin-bottom:5px;
+    background-color: aliceblue;
+}
