@@ -3,27 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Game</title>
+    <title>Donut Maker Clicker</title>
     <link rel="stylesheet" href="gameStyle.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap"
       rel="stylesheet"
-    />
+      <link rel="stylesheet" href="src\css\style.css">
   </head>
-  <body>
-    <div class="container">
-      <h1>Shopping List</h1>
-      <div class="inputContainer">
-        <input type="text" id="item" placeholder="Enter an item" />
-        <button id="addDonut">Buy Donut</button>
-        <button id="ResetBtn">Reset</button>
-      </div>
-      <ul id="list"></ul>
-      <p id="total">Total Items: 0</p>
-    </div>
 
-    <script src="app.js"></script>
-  </body>
-</html>
+
+  <body>
+    <div class="wrapper">
+        <div class="donut">
+            <header class="header">
+                <nav class="links">
+                    <div class="info-dropdown">
+                        <button onclick="infoFunction()" class="info-dropbtn">Company Information</button>
+                        <div id="infoDropdown" class="info-dropdown-content">
+                            <a>Hello, You are a new employee at Fred the Baker Baking Company.</a>
+                            <a>It's always "Time to make the donuts" and we need to get baking.</a>
+                            <a>Let's fire up this virtual oven and lets start making donuts.</a>
+                            <a>As they say the only circle of trust you should have is a donut.</a>
+                            <a>Use your donut making skills and help curb all your customer's sweet tooths.</a>
+                        </div>
+                    </div>
+                    <div class="inspirtation-dropdown">
+                        <button onclick="inspirationFunction()" class="inspiration-dropbtn">Inspiration for
+                            Game</button>
+                        <div id="inspirationDropdown" class="inspiration-dropdown-content">
+                            <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie Clicker</a>
+                            <a href="https://64.media.tumblr.com/6d3cb4d058baebb34601d037f77a99a2/tumblr_mjtottMnfC1s7umblo1_1280.pnj"  target="_blank">Donut Picture</a>
+                            </div>
+                    </div>
+                    <div class="aboutme-modal">
+                        <button id="modalBtn" class="modal-button">Contact Creator</button>
+                        <div id="aboutModal" class="about-modal">
+                        <div class="modal-content">
+                            <span class="modal-close">&times;</span>
+                            <p>Hi my name is Sarah Fought. I am a Full-Stack Java developer.</p>
+                            <p>Thanks for playing my Donut Maker Clicker. Please feel free to contact me.
+                            <a href="https://github.com/WeCanCodeIT/personal-sfought3.git" target="_blank">github</a>.
+                            < href="https://www.linkedin.com/in/sarah-fought-366614133/ "</a></p>
+                        </div>
+                        </div>
+                    </div>
+                    </nav>
+                    </header>
+
+                    <div class="donut">
+
+                        <div class="player-stats-container">
+                            <section class="player-stats">
+                                <div class="player-stats__donut-count">Donuts: </div>
+                                <div class="player-stats__auto-clicker-count">Auto Clickers: </div>
+                                <div class="player-stats__auto-clicker-cost">Auto Clicker Cost: </div>
+                                <div class="player-stats__multiplier-count">Donut Multipliers: </div>
+                                <div class="player-stats__multiplier-cost">Multiplier Cost: </div>
+                                <div class="player-stats__current-multiplier">Current Multiplier: </div>
+                            </section>
+                            <section class="buttons">
+                                <button class="buttons__clicker-button">Make Donuts</button>
+                                <button class="buttons__buy-auto-clicker">Buy Auto Clicker</button>
+                                <button class="buttons__buy-multiplier">Buy Donut Multiplier</button>
+                                <button class="buttons__reset">RESET GAME</button>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="./src/js/app.js" type="module"></script>
+            <script src="./src/js/info-dropdown.js"></script>
+            <script src="./src/js/inspiration-dropdown.js"></script>
+            <script src="./src/js/about-modal.js"></script>
+        </body>
+        <footer>
+        
+        </footer>
+        
+        </html>
+
