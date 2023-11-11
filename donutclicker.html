@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="donutclickerStyle.css"
+  </head>
+    <h1>Donut Clicker</h1>
+    <img
+      src="https://64.media.tumblr.com/6d3cb4d058baebb34601d037f77a99a2/tumblr_mjtottMnfC1s7umblo1_1280.pnj"
+      id="donut"
+      style="width: 300px"
+      onclick="increment()"
+    />
+    <p>Donuts Made: <span id="counter">0</span></p>
+    <button id = "reset" onclick="reset()">Reset</button>
+    <button id = "autoclick" onclick="autoclick()">AutoClick</button>
+
+</body>
+  <script>
+    var clicks = 0 ;
+    function increment(){
+        clicks= clicks + 1;
+        counter.innerHTML= clicks;
+    }
+    function reset(){
+        clicks=0;
+        counter.innerHTML= clicks;
+    }
+  </script>
+</html>
